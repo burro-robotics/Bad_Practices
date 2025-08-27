@@ -28,7 +28,7 @@ To compile and run this project, follow these steps:
 4.  **Build the project:**
 
     ```bash
-    cmake --build .
+    cmake -S . -B build/
     ```
 
 5.  **Run the executable:**

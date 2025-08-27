@@ -1,5 +1,6 @@
 #include "utils.h"
 #include <vector>
+#include <iostream>
 
 // Bad Practice: Function with too many responsibilities
 int calculateSum(int a, int b) {
