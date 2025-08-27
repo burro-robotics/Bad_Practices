@@ -5,12 +5,12 @@ Example bad python3 script
 from typing import List
 
 
-class ConfigProcessor:
+class NumberConfigProcessor:
     def __init__(self, filename: str, cache: List[str] = []):
         self.filename = filename
         self.cache = cache
 
-    def read_config(self):
+    def read_number_config(self):
         f = open(self.filename, "r")
         lines = f.readlines()
         f.close()
@@ -35,8 +35,8 @@ class ConfigProcessor:
 def main():
     list = ["123", "abc", "456"]
 
-    processor = ConfigProcessor("config.txt")
-    lines = processor.read_config()
+    processor = NumberConfigProcessor("config.txt")
+    lines = processor.read_number_config()
     numbers = processor.parse_numbers(lines + list)
 
     print("Numbers: %s" % numbers)
